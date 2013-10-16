@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>distributeri</key>
+	<dict>
+		<key>OMV</key>
+		<true/>
+		<key>Tifon</key>
+		<true/>
+		<key>INA</key>
+		<true/>
+		<key>Lukoil</key>
+		<true/>
+		<key>Petrol</key>
+		<true/>
+	</dict>
+	<key>ostalo</key>
+	<dict>
+		<key>Autocesta</key>
+		<true/>
+	</dict>
+	<key>kategorije</key>
+	<dict>
+		<key>Lož ulje</key>
+		<true/>
+		<key>Super 95</key>
+		<true/>
+		<key>Super 98</key>
+		<true/>
+		<key>Dizel</key>
+		<true/>
+		<key>Autoplin</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

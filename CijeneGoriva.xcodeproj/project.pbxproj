@@ -19,8 +19,6 @@
 		1A67AB55160E2C93003BD707 /* pullarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A67AB52160E2C93003BD707 /* pullarrow.png */; };
 		1A67AB56160E2C93003BD707 /* pullarrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A67AB53160E2C93003BD707 /* pullarrow@2x.png */; };
 		1A67AB57160E2C93003BD707 /* pullarrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A67AB53160E2C93003BD707 /* pullarrow@2x.png */; };
-		1A67AB651610451D003BD707 /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A67AB641610451D003BD707 /* PullRefreshTableViewController.m */; };
-		1A67AB661610451D003BD707 /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A67AB641610451D003BD707 /* PullRefreshTableViewController.m */; };
 		1AA2216315DF95D500E6E119 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA2216215DF95D500E6E119 /* UIKit.framework */; };
 		1AA2216515DF95D500E6E119 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA2216415DF95D500E6E119 /* Foundation.framework */; };
 		1AA2216715DF95D500E6E119 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA2216615DF95D500E6E119 /* CoreGraphics.framework */; };
@@ -87,6 +85,7 @@
 		1AF7ED03160B53D9003FF957 /* autocesta@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AF7ECFF160B53D9003FF957 /* autocesta@2x.png */; };
 		1AF7ED10160BBD8B003FF957 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF7ED0F160BBD8B003FF957 /* QuartzCore.framework */; };
 		1AF7ED29160BC3F0003FF957 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF7ED0F160BBD8B003FF957 /* QuartzCore.framework */; };
+		FCFE222176A84F43A63B9747 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D51A4602DA43389A548C09 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,8 +101,6 @@
 		1A67AB4B160DE20C003BD707 /* tbsettings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tbsettings@2x.png"; path = "Artwork/TabBar/tbsettings@2x.png"; sourceTree = "<group>"; };
 		1A67AB52160E2C93003BD707 /* pullarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pullarrow.png; path = Artwork/Element/pullarrow.png; sourceTree = "<group>"; };
 		1A67AB53160E2C93003BD707 /* pullarrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pullarrow@2x.png"; path = "Artwork/Element/pullarrow@2x.png"; sourceTree = "<group>"; };
-		1A67AB631610451D003BD707 /* PullRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PullRefreshTableViewController.h; path = ../../../frameworks/PullToRefresh/Classes/PullRefreshTableViewController.h; sourceTree = "<group>"; };
-		1A67AB641610451D003BD707 /* PullRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PullRefreshTableViewController.m; path = ../../../frameworks/PullToRefresh/Classes/PullRefreshTableViewController.m; sourceTree = "<group>"; };
 		1AA2215E15DF95D500E6E119 /* CijeneGoriva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CijeneGoriva.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AA2216215DF95D500E6E119 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1AA2216415DF95D500E6E119 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -155,6 +152,8 @@
 		1AF7ECFE160B53D9003FF957 /* autocesta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = autocesta.png; path = Artwork/Element/autocesta.png; sourceTree = "<group>"; };
 		1AF7ECFF160B53D9003FF957 /* autocesta@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "autocesta@2x.png"; path = "Artwork/Element/autocesta@2x.png"; sourceTree = "<group>"; };
 		1AF7ED0F160BBD8B003FF957 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		29D51A4602DA43389A548C09 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E96AE06BD849F1BF45D990 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +166,7 @@
 				1AA2216515DF95D500E6E119 /* Foundation.framework in Frameworks */,
 				1AA2216715DF95D500E6E119 /* CoreGraphics.framework in Frameworks */,
 				1AA2216915DF95D500E6E119 /* CoreData.framework in Frameworks */,
+				FCFE222176A84F43A63B9747 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +188,6 @@
 		1AA2215315DF95D500E6E119 = {
 			isa = PBXGroup;
 			children = (
-				1AF7ED09160BBCA9003FF957 /* Ext */,
 				1AA221AF15DFCEB400E6E119 /* Model */,
 				1AA2219A15DF960600E6E119 /* Classes */,
 				1AF7ECA8160B2E19003FF957 /* Service */,
@@ -197,6 +196,7 @@
 				1AA2218815DF95F500E6E119 /* CijeneGorivaPro */,
 				1AA2216115DF95D500E6E119 /* Frameworks */,
 				1AA2215F15DF95D500E6E119 /* Products */,
+				A9E96AE06BD849F1BF45D990 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,6 +217,7 @@
 				1AA2216415DF95D500E6E119 /* Foundation.framework */,
 				1AA2216615DF95D500E6E119 /* CoreGraphics.framework */,
 				1AA2216815DF95D500E6E119 /* CoreData.framework */,
+				29D51A4602DA43389A548C09 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -375,15 +376,6 @@
 			name = Element;
 			sourceTree = "<group>";
 		};
-		1AF7ED09160BBCA9003FF957 /* Ext */ = {
-			isa = PBXGroup;
-			children = (
-				1A67AB631610451D003BD707 /* PullRefreshTableViewController.h */,
-				1A67AB641610451D003BD707 /* PullRefreshTableViewController.m */,
-			);
-			name = Ext;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -391,9 +383,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AA2217B15DF95D500E6E119 /* Build configuration list for PBXNativeTarget "CijeneGoriva" */;
 			buildPhases = (
+				A374F81FCC5C40A287752392 /* Check Pods Manifest.lock */,
 				1AA2215A15DF95D500E6E119 /* Sources */,
 				1AA2215B15DF95D500E6E119 /* Frameworks */,
 				1AA2215C15DF95D500E6E119 /* Resources */,
+				B7D6D674C3C648A6B308F80B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -513,6 +507,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A374F81FCC5C40A287752392 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B7D6D674C3C648A6B308F80B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1AA2215A15DF95D500E6E119 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -527,7 +554,6 @@
 				1AF7ECB3160B2E85003FF957 /* ObjectLoader.m in Sources */,
 				1AF7ECB5160B2E85003FF957 /* ObjectParser.m in Sources */,
 				1AF7ECB7160B2E85003FF957 /* SettingsLoader.m in Sources */,
-				1A67AB651610451D003BD707 /* PullRefreshTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +572,6 @@
 				1AF7ECB8160B2E85003FF957 /* SettingsLoader.m in Sources */,
 				1A67AB41160DDED1003BD707 /* SettingsViewController.m in Sources */,
 				1A67AB45160DDEF1003BD707 /* InfoViewController.m in Sources */,
-				1A67AB661610451D003BD707 /* PullRefreshTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,6 +650,7 @@
 		};
 		1AA2217C15DF95D500E6E119 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9E96AE06BD849F1BF45D990 /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -639,6 +665,7 @@
 		};
 		1AA2217D15DF95D500E6E119 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9E96AE06BD849F1BF45D990 /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ivor Prebeg";
@@ -647,7 +674,7 @@
 				INFOPLIST_FILE = "CijeneGoriva/CijeneGoriva-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5FBEA090-6B94-465B-A298-BA4B8EBBF6BE";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5397DD76-3FC5-498D-B8D6-DF46BA07675B";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -676,7 +703,7 @@
 				INFOPLIST_FILE = "CijeneGorivaPro/CijeneGorivaPro-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "76906CEC-2FD1-4067-BD46-3DE48EE87F92";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9EAF1D94-FEEE-4E78-9757-AD686515DFE4";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

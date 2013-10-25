@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>628C001B-CB0D-42AD-A8AB-A7D801B87EEF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CijeneGoriva</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1D4F2B16-32CA-4C04-9A15-67FA7F732E3C</key>
+		<string>https://bitbucket.com/iprebeg/iCijeneGoriva-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CijeneGoriva.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1D4F2B16-32CA-4C04-9A15-67FA7F732E3C</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.com/iprebeg/iCijeneGoriva-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1D4F2B16-32CA-4C04-9A15-67FA7F732E3C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1D4F2B16-32CA-4C04-9A15-67FA7F732E3C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iCijeneGoriva-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

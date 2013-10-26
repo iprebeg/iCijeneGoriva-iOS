@@ -423,6 +423,14 @@
 			attributes = {
 				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = "Ivor Prebeg";
+				TargetAttributes = {
+					1AA2215D15DF95D500E6E119 = {
+						DevelopmentTeam = CH62UY6B29;
+					};
+					1AA2218115DF95F500E6E119 = {
+						DevelopmentTeam = CH62UY6B29;
+					};
+				};
 			};
 			buildConfigurationList = 1AA2215815DF95D500E6E119 /* Build configuration list for PBXProject "CijeneGoriva" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -653,10 +661,11 @@
 			baseConfigurationReference = A9E96AE06BD849F1BF45D990 /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CijeneGoriva/CijeneGoriva-Prefix.pch";
 				INFOPLIST_FILE = "CijeneGoriva/CijeneGoriva-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -668,11 +677,12 @@
 			baseConfigurationReference = A9E96AE06BD849F1BF45D990 /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ivor Prebeg";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CijeneGoriva/CijeneGoriva-Prefix.pch";
 				INFOPLIST_FILE = "CijeneGoriva/CijeneGoriva-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5397DD76-3FC5-498D-B8D6-DF46BA07675B";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -683,11 +693,12 @@
 		1AA2219815DF95F500E6E119 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CijeneGorivaPro/CijeneGorivaPro-Prefix.pch";
 				INFOPLIST_FILE = "CijeneGorivaPro/CijeneGorivaPro-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -697,11 +708,12 @@
 		1AA2219915DF95F500E6E119 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ivor Prebeg";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CijeneGorivaPro/CijeneGorivaPro-Prefix.pch";
 				INFOPLIST_FILE = "CijeneGorivaPro/CijeneGorivaPro-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9EAF1D94-FEEE-4E78-9757-AD686515DFE4";
 				TARGETED_DEVICE_FAMILY = 1;

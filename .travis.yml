@@ -12,7 +12,7 @@ xcode_workspace: CijeneGoriva.xcworkspace
 xcode_scheme: CijeneGoriva
 xcode_configuration: Debug 
 xcode_arch: i386 
-xcode_sdk: iphonesimulator7.0
+xcode_sdk: iphonesimulator
 
 
 before_install:

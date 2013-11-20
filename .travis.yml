@@ -3,13 +3,23 @@ language: objective-c
 #xcode_sdk: iphonesimulator
 #env: XCODEBUILD_SETTINGS="-sdk iphonesimulator" #XCCONFIGURATION=Debug 
 
-before_install: 
-  - cat ~/.rvmrc
-  - rvm 2.0.0
-  - rvm use ruby-2.0.0-p247
+#before_install: 
+#  - cat ~/.rvmrc
+#  - rvm 2.0.0
+#  - rvm use ruby-2.0.0-p247
 
-xcode_workspace: CijeneGoriva.xcworkspace
-xcode_scheme: CijeneGoriva
-xcode_configuration: Debug 
-xcode_arch: i386 
-xcode_sdk: iphonesimulator7.0
+#xcode_workspace: CijeneGoriva.xcworkspace
+#xcode_scheme: CijeneGoriva
+#xcode_configuration: Debug 
+#xcode_arch: i386 
+#xcode_sdk: iphonesimulator7.0
+
+
+before_install:
+  - brew update
+  - brew uninstall xctool && brew install xctool --HEAD
+  - pod install 
+
+script:
+  - xctool -workspace CijeneGoriva.xcworkspace -scheme CijeneGoriva -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool test -workspace CijeneGoriva.xcworkspace -scheme CijeneGorivaTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO

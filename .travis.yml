@@ -3,8 +3,9 @@ language: objective-c
 #xcode_sdk: iphonesimulator
 #env: XCODEBUILD_SETTINGS="-sdk iphonesimulator" #XCCONFIGURATION=Debug 
 
-before_install: cat ~/.rvmrc
-before_install: rvm 2.0.0
+before_install: 
+  - cat ~/.rvmrc
+  - rvm 2.0.0
 
 xcode_workspace: CijeneGoriva.xcworkspace
 xcode_scheme: CijeneGoriva

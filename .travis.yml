@@ -6,6 +6,7 @@ language: objective-c
 before_install: 
   - cat ~/.rvmrc
   - rvm 2.0.0
+  - rvm use ruby-2.0.0-p247
 
 xcode_workspace: CijeneGoriva.xcworkspace
 xcode_scheme: CijeneGoriva

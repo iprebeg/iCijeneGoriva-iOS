@@ -1,3 +1,10 @@
 language: objective-c
+
+#xcode_sdk: iphonesimulator
+#env: XCODEBUILD_SETTINGS="-sdk iphonesimulator" #XCCONFIGURATION=Debug 
+
+xcode_workspace: CijeneGoriva.xcworkspace
+xcode_scheme: CijeneGoriva
+xcode_configuration: Debug 
+xcode_arch: i386 
 xcode_sdk: iphonesimulator
-env: XCODEBUILD_SETTINGS="-sdk iphonesimulator" #XCCONFIGURATION=Debug 

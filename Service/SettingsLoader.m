@@ -39,7 +39,7 @@
                                           format:&format
                                           errorDescription:&errorDesc];
     if (!temp) {
-        NSLog(@"Error reading plist: %@, format: %d", errorDesc, format);
+        NSLog(@"Error reading plist: %@", errorDesc);
     }
     
     kategorije = [NSMutableDictionary dictionaryWithDictionary:[temp objectForKey:@"kategorije"]];

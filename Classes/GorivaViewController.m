@@ -13,8 +13,22 @@
 
 @end
 
+
 @implementation GorivaViewController
 
+
+- (void) startLoading
+{
+    [self.tableView setContentOffset:CGPointMake(0, -self.refreshControl.frame.size.height) animated:YES];
+    [self.refreshControl beginRefreshing];
+    [self performSelector:@selector(refresh) withObject:Nil afterDelay:0];
+}
+
+
+- (void) stopLoading
+{
+    [self.refreshControl endRefreshing];
+}
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -24,13 +38,18 @@
         self.tableView.backgroundColor = [UIColor IP_DARK];
         
         _objectLoader = [[ObjectLoader alloc] init];
-        goriva = [[NSMutableArray alloc] init];
+        _goriva = [[NSMutableArray alloc] init];
         
         self.tableView.delegate = self;
         self.tableView.dataSource = self;
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         //self.tableView.layer.cornerRadius = 10;
         //self.view.layer.cornerRadius = 10;
+        
+        _refreshControlView = [[UIRefreshControl alloc] init];
+        [_refreshControlView addTarget:self action:@selector(refresh)
+                           forControlEvents:UIControlEventValueChanged];
+        self.refreshControl = _refreshControlView;
         
         [self reloadKategorijaControl];
     }
@@ -43,11 +62,11 @@
     NSArray *items = [_settingsLoader getKategorije];
     
     CGRect kategorijaRect = CGRectMake(0, 0, self.view.bounds.size.width, 30);
-    kategorijaControl = [[UISegmentedControl alloc] initWithItems:items];
-    kategorijaControl.bounds = kategorijaRect;
-    kategorijaControl.segmentedControlStyle = UISegmentedControlStyleBar;
+    _kategorijaControl = [[UISegmentedControl alloc] initWithItems:items];
+    _kategorijaControl.bounds = kategorijaRect;
+    _kategorijaControl.segmentedControlStyle = UISegmentedControlStyleBar;
     //kategorijaControl.tintColor = [UIColor grayColor];
-    kategorijaControl.backgroundColor = [UIColor clearColor];
+    _kategorijaControl.backgroundColor = [UIColor clearColor];
     
     //UIFont *font = [UIFont boldSystemFontOfSize:12.0f];
     //UIColor *color = [UIColor orangeColor];
@@ -55,13 +74,13 @@
     //NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:font, UITextAttributeFont, color, UITextAttributeTextColor, nil];
     
     //[kategorijaControl setTitleTextAttributes:attributes forState:UIControlStateNormal];
-    [kategorijaControl addTarget:self action:@selector(action:) forControlEvents:UIControlEventValueChanged];
-    [kategorijaControl setSelectedSegmentIndex:0];
-    kategorijaControl.layer.cornerRadius = 0;
+    [_kategorijaControl addTarget:self action:@selector(action:) forControlEvents:UIControlEventValueChanged];
+    [_kategorijaControl setSelectedSegmentIndex:0];
+    _kategorijaControl.layer.cornerRadius = 0;
     
     
     
-    self.tableView.tableHeaderView = kategorijaControl;
+    self.tableView.tableHeaderView = _kategorijaControl;
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -94,7 +113,7 @@
     NSArray *enabledDistributeri = [_settingsLoader getDistributeri];
     NSDictionary *ostalo = [_settingsLoader getOstalo];
     
-    NSString *kategorija = [enabledKategorije objectAtIndex:kategorijaControl.selectedSegmentIndex];
+    NSString *kategorija = [enabledKategorije objectAtIndex:_kategorijaControl.selectedSegmentIndex];
     kategorija = [kategorija stringByReplacingOccurrencesOfString:@" " withString:@""];
     kategorija = [kategorija stringByReplacingOccurrencesOfString:@"ž" withString:@"z"];
     NSString *kategorijaFilter = [@"?kategorija=" stringByAppendingString:kategorija];
@@ -138,7 +157,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [goriva count];
+    return [_goriva count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -150,7 +169,7 @@
         cell = [[GorivoTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
     
-    Gorivo *g = [goriva objectAtIndex:[indexPath row]];
+    Gorivo *g = [_goriva objectAtIndex:[indexPath row]];
 
     cell.nazivLabel.text = [g naziv];
     cell.datumLabel.text = [g datum];
@@ -180,8 +199,8 @@
 {
     [self performSelector:@selector(stopLoading) withObject:nil afterDelay:0.1];
     //NSLog(@"%s %d", __func__, [objects count]);
-    [goriva removeAllObjects];
-    [goriva addObjectsFromArray:objects];
+    [_goriva removeAllObjects];
+    [_goriva addObjectsFromArray:objects];
     [self.tableView reloadData];
 }
 

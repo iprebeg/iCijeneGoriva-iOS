@@ -10,13 +10,13 @@
 #import "GorivoTableViewCell.h"
 #import "ObjectLoader.h"
 #import "SettingsLoader.h"
-#import "PullRefreshTableViewController.h"
 
-@interface GorivaViewController : PullRefreshTableViewController /*UITableViewController*/<ObjectLoaderProtocol>
-{
-    NSMutableArray *goriva;
-    UISegmentedControl *kategorijaControl;
-    ObjectLoader *_objectLoader;
-    SettingsLoader *_settingsLoader;
-}
+@interface GorivaViewController : UITableViewController /*UITableViewController*/<ObjectLoaderProtocol>
+
+@property (nonatomic, strong) NSMutableArray *goriva;
+@property (nonatomic, strong) UISegmentedControl *kategorijaControl;
+@property (nonatomic, strong) ObjectLoader *objectLoader;
+@property (nonatomic, strong) SettingsLoader *settingsLoader;
+@property (nonatomic, strong) UIRefreshControl *refreshControlView;
+
 @end

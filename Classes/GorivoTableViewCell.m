@@ -29,9 +29,9 @@
         nazivLabel.backgroundColor = [UIColor redColor];
         nazivLabel.backgroundColor = [UIColor clearColor];
         nazivLabel.numberOfLines = 1;
-        nazivLabel.textAlignment = UITextAlignmentLeft;
+        nazivLabel.textAlignment = NSTextAlignmentLeft;
         nazivLabel.adjustsFontSizeToFitWidth = YES;
-        nazivLabel.minimumFontSize = 12.0f;
+        nazivLabel.minimumScaleFactor = 12.0f;
         [self addSubview:nazivLabel];
         
         CGRect datumRect = CGRectMake(80, CELL_HEIGHT - 30, 100, 20);
@@ -45,7 +45,7 @@
         //CGRect cijenaRect = CGRectMake(260, CELL_HEIGHT - 30, 50, 20);
         CGRect cijenaRect = CGRectMake(240, CELL_HEIGHT - 30, 70, 30);
         cijenaLabel = [[UILabel alloc] initWithFrame:cijenaRect];
-        cijenaLabel.textAlignment = UITextAlignmentCenter;
+        cijenaLabel.textAlignment = NSTextAlignmentCenter;
         cijenaLabel.backgroundColor = [UIColor darkGrayColor];
         cijenaLabel.backgroundColor = [UIColor clearColor];
         //cijenaLabel.layer.cornerRadius = 5;

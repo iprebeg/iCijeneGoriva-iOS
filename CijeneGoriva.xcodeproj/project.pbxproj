@@ -53,8 +53,6 @@
 		1AF7ECB8160B2E85003FF957 /* SettingsLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7ECB2160B2E85003FF957 /* SettingsLoader.m */; };
 		1AF7ED10160BBD8B003FF957 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF7ED0F160BBD8B003FF957 /* QuartzCore.framework */; };
 		1AF7ED29160BC3F0003FF957 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF7ED0F160BBD8B003FF957 /* QuartzCore.framework */; };
-		3501C56C674A47828EA0D942 /* libPods-CijeneGorivaProTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE6E38A77F24808A092ADCB /* libPods-CijeneGorivaProTests.a */; };
-		369AEC5498C345CCB8DFA272 /* libPods-CijeneGorivaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9896E63F7A1E4FBE835F6187 /* libPods-CijeneGorivaTests.a */; };
 		FCFE222176A84F43A63B9747 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D51A4602DA43389A548C09 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -167,7 +165,6 @@
 				1AE6B2C0181F247C003DF1CA /* XCTest.framework in Frameworks */,
 				1AE6B2C2181F247C003DF1CA /* UIKit.framework in Frameworks */,
 				1AE6B2C1181F247C003DF1CA /* Foundation.framework in Frameworks */,
-				369AEC5498C345CCB8DFA272 /* libPods-CijeneGorivaTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +175,6 @@
 				1AE6B2D6181F248E003DF1CA /* XCTest.framework in Frameworks */,
 				1AE6B2D8181F248E003DF1CA /* UIKit.framework in Frameworks */,
 				1AE6B2D7181F248E003DF1CA /* Foundation.framework in Frameworks */,
-				3501C56C674A47828EA0D942 /* libPods-CijeneGorivaProTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

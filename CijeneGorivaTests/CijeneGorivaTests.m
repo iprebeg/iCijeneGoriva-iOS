@@ -36,7 +36,7 @@
     ObjectLoader *ol = [[ObjectLoader alloc] init];
     XCTAssert(ol != nil);
     
-    NSString *url = [NSString stringWithFormat:@"%@?kategorija=Autoplin&distributeri=OMV,Lukoil,Petrol,Tifon,INA&Autocesta=DA",kURLGoriva];
+    NSString *url = [NSString stringWithFormat:@"%@?kategorija=Autoplin&distributeri=CRODUX,OMV,Lukoil,Petrol,Tifon,INA&Autocesta=DA",kURLGoriva];
     NSLog(@"using url: %@", url);
 
     [ol loadObjectsFromUrl:url forDelegate:self];
@@ -56,7 +56,7 @@
     ObjectLoader *ol = [[ObjectLoader alloc] init];
     XCTAssert(ol != nil);
     
-    NSString *url = [NSString stringWithFormat:@"%@?kategorija=Super95&distributeri=OMV,Lukoil,Petrol,Tifon,INA&Autocesta=DA",kURLGoriva];
+    NSString *url = [NSString stringWithFormat:@"%@?kategorija=Super95&distributeri=CRODUX,OMV,Lukoil,Petrol,Tifon,INA&Autocesta=DA",kURLGoriva];
     NSLog(@"using url: %@", url);
 
     [ol loadObjectsFromUrl:url forDelegate:self];
@@ -76,7 +76,7 @@
     ObjectLoader *ol = [[ObjectLoader alloc] init];
     XCTAssert(ol != nil);
     
-    NSString *url = [NSString stringWithFormat:@"%@?kategorija=Super98&distributeri=OMV,Lukoil,Petrol,Tifon,INA&Autocesta=DA",kURLGoriva];
+    NSString *url = [NSString stringWithFormat:@"%@?kategorija=Super98&distributeri=CRODUX,OMV,Lukoil,Petrol,Tifon,INA&Autocesta=DA",kURLGoriva];
     NSLog(@"using url: %@", url);
 
     [ol loadObjectsFromUrl:url forDelegate:self];
@@ -96,7 +96,7 @@
     ObjectLoader *ol = [[ObjectLoader alloc] init];
     XCTAssert(ol != nil);
     
-    NSString *url = [NSString stringWithFormat:@"%@?kategorija=Lozulje&distributeri=OMV,Lukoil,Petrol,Tifon,INA&Autocesta=DA",kURLGoriva];
+    NSString *url = [NSString stringWithFormat:@"%@?kategorija=Lozulje&distributeri=CRODUX,OMV,Lukoil,Petrol,Tifon,INA&Autocesta=DA",kURLGoriva];
     NSLog(@"using url: %@", url);
 
     [ol loadObjectsFromUrl:url forDelegate:self];
@@ -117,7 +117,7 @@
     ObjectLoader *ol = [[ObjectLoader alloc] init];
     XCTAssert(ol != nil);
     
-    NSString *url = [NSString stringWithFormat:@"%@?kategorija=Dizel&distributeri=OMV,Lukoil,Petrol,Tifon,INA&Autocesta=DA",kURLGoriva];
+    NSString *url = [NSString stringWithFormat:@"%@?kategorija=Dizel&distributeri=CRODUX,OMV,Lukoil,Petrol,Tifon,INA&Autocesta=DA",kURLGoriva];
     NSLog(@"using url: %@", url);
     
     [ol loadObjectsFromUrl:url forDelegate:self];

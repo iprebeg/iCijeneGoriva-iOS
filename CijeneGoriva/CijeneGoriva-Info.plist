@@ -8,11 +8,6 @@
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
-	<key>CFBundleIconFiles</key>
-	<array>
-		<string>drop114.png</string>
-		<string>drop57.png</string>
-	</array>
 	<key>CFBundleIcons</key>
 	<dict/>
 	<key>CFBundleIcons~ipad</key>

@@ -87,7 +87,7 @@
     {
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
 	}
-    [cell setSelectionStyle:UITableViewCellEditingStyleNone];
+    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     [cell setBackgroundColor:[UIColor IP_LIGHT]];
     [cell.textLabel setTextColor:[UIColor darkGrayColor]];
     

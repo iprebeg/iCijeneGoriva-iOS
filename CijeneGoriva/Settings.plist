@@ -4,6 +4,8 @@
 <dict>
 	<key>distributeri</key>
 	<dict>
+    <key>CRODUX</key>
+    <true/>
 		<key>OMV</key>
 		<true/>
 		<key>Tifon</key>

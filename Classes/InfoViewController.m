@@ -43,7 +43,7 @@
             index++;
             
             CGRect distributerIconRect = CGRectMake(inset + column * (columnWidth + verticalInterspace),
-                                                    inset + row * (lineHeight + labelSpace + labelHeight + horizontalInterspace),
+                                                    inset + (row+1) * (lineHeight + labelSpace + labelHeight + horizontalInterspace),
                                                     columnWidth, columnWidth);
             UIImageView *distributerIcon = [[UIImageView alloc] initWithFrame:distributerIconRect];
             distributerIcon.backgroundColor = [UIColor whiteColor];
@@ -70,9 +70,13 @@
             
             urlLabel.backgroundColor = [UIColor clearColor];
             urlLabel.textColor = [UIColor darkGrayColor];
-            urlLabel.textAlignment = UITextAlignmentCenter;
-            urlLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:12.0f];
+            urlLabel.textAlignment = NSTextAlignmentCenter;
+            urlLabel.font = [UIFont fontWithName:@"Helvetica" size:7.0f];
             urlLabel.text = [NSString stringWithFormat:@"%@.hr", [dist lowercaseString]];
+            if ([[dist lowercaseString] isEqualToString:@"crodux"])
+            {
+                urlLabel.text = [NSString stringWithFormat:@"%@-derivati.hr", [dist lowercaseString]];
+            }
             
             [self.view addSubview:urlLabel];
             
